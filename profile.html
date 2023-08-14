@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Profile</title>
+  <!-- Link to Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-md bg-dark navbar-dark">
+  <a class="navbar-brand" href="#">My Profile</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="#">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Portfolio</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Contact</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<!-- Carousel -->
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="image1.jpg" alt="Image 1">
+    </div>
+    <div class="carousel-item">
+      <img src="image2.jpg" alt="Image 2">
+    </div>
+    <div class="carousel-item">
+      <img src="image3.jpg" alt="Image 3">
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>
+
+<!-- Accordion -->
+<div class="container mt-4">
+  <h2>Skills</h2>
+  <div id="accordion">
+    <div class="card">
+      <div class="card-header">
+        <a class="card-link" data-toggle="collapse" href="#collapse1">HTML</a>
+      </div>
+      <div id="collapse1" class="collapse" data-parent="#accordion">
+        <div class="card-body">Proficient in HTML5</div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header">
+        <a class="card-link" data-toggle="collapse" href="#collapse2">CSS</a>
+      </div>
+      <div id="collapse2" class="collapse" data-parent="#accordion">
+        <div class="card-body">Skilled in CSS3 and Bootstrap</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Button -->
+<div class="container mt-4">
+  <a href="#" class="btn btn-primary">Download Resume</a>
+</div>
+
+<!-- Cards -->
+<div class="container mt-4">
+  <div class="card-deck">
+    <div class="card">
+      <img src="project1.jpg" class="card-img-top" alt="Project 1">
+      <div class="card-body">
+        <h5 class="card-title">Project 1</h5>
+        <p class="card-text">Description of Project 1</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="project2.jpg" class="card-img-top" alt="Project 2">
+      <div class="card-body">
+        <h5 class="card-title">Project 2</h5>
+        <p class="card-text">Description of Project 2</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="project3.jpg" class="card-img-top" alt="Project 3">
+      <div class="card-body">
+        <h5 class="card-title">Project 3</h5>
+        <p class="card-text">Description of Project 3</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Link to Bootstrap JS and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
